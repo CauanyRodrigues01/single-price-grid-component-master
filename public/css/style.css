@@ -124,7 +124,7 @@ body {
     color: hsl(228, 45%, 44%); 
 }
 
-@media (max-width: 375px) {
+@media (max-width: 414px) {
     .container {
         height: auto;
     }
