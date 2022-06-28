@@ -12,7 +12,6 @@ body {
 .container {
     /* screen space measurement */
     width: 100vw;
-    height: 100vh;
 
     /* organization of items */
     display: flex;
@@ -124,9 +123,6 @@ body {
 }
 
 @media (max-width: 375px) {
-    .container {
-        height: auto;
-    }
     .card {
         margin-top: 30px;
     }
