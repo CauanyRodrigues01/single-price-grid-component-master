@@ -26,6 +26,7 @@ body {
     /* screen space measurement */
     width: 90%;
     max-width: 650px;
+    min-width: 245px;
 }
 
 .card main {
