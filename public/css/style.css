@@ -1,0 +1,141 @@
+* {
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+}
+
+body {
+    /* reset */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    /* screen space measurement */
+    width: 100vw;
+    height: 100vh;
+
+    /* organization of items */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: hsl(204, 43%, 93%);
+}
+
+.card {
+    /* screen space measurement */
+    width: 90%;
+    max-width: 650px;
+}
+
+.card main {
+    /* screen space measurement */
+    padding: 2rem;
+
+    background-color: hsl(0, 0%, 100%);
+    border-radius: .5rem .5rem 0 0;
+}
+
+.card main h1 {
+    /* screen space measurement */
+    padding-bottom: .5rem;
+
+    color: hsl(179, 62%, 43%);
+    font-size: 1.5rem;
+}
+
+.card main h2 {
+    color: hsl(71, 73%, 54%);
+    font-size: 1.1rem;
+}
+
+.card main p {
+    /* screen space measurement */
+    margin: 0 0 .4rem 0;
+
+    color: hsl(218, 22%, 67%);
+}
+
+.card section {
+    /* organization of items */
+    display: flex;
+    justify-content: space-between;
+
+    color: hsl(0, 0%, 100%);
+}
+
+.card section h3 {
+    font-size: 1.2rem;
+}
+
+.card section .container-price {
+    /* screen space measurement */
+    padding: 2rem;
+    width: 100%;
+
+    background-color: hsl(179, 62%, 43%);
+    border-radius: 0 0 0 .5rem;
+}
+
+.card section .container-price #money {
+    font-size: 2rem;
+}
+
+.card section .container-price #money-details {
+    font-weight: 200;
+    margin-left: 8px;
+}
+
+.button-signUp {
+    /* screen space measurement */
+    width: 100%;
+    padding: 1rem;
+    margin: 15px 0 0 0;
+
+    background-color: hsl(71, 73%, 54%);
+    border: 0;
+    border-radius: .3rem;
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+}
+
+.card section .container-features {
+    /* screen space measurement */
+    padding: 2rem;
+    width: 100%;
+
+    background-color: hsla(179, 62%, 43%, 0.70);
+    border-radius: 0 0 .5rem 0;
+}
+
+.card section .container-features p {
+    /* screen space measurement */
+    margin: 0 0 .3rem 0;
+    font-weight: 200;
+}
+
+.attribution { 
+    display: none;
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media (max-width: 375px) {
+    .card section {
+        display: block;
+    }
+    .card section .container-price {
+        width: auto;
+        border-radius: 0;
+    }
+    .card section .container-features {
+        width: auto;
+        border-radius: 0 0 .5rem .5rem;
+    }
+    .card section h3 {
+        margin-top: 0;
+    }
+}
